@@ -5,9 +5,7 @@ type Props = {
   goods: Good[];
 };
 
-export const GoodsList: React.FC<Props> = React.memo(function GoodList({
-  goods,
-}) {
+export const GoodsList = React.memo(function GoodList({ goods }: Props) {
   return (
     <ul>
       {goods.map(good => (
